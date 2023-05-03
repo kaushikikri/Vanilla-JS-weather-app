@@ -3,6 +3,7 @@ btn.addEventListener('click', search);
 
 function search() {
 	let city = document.getElementById('search-box').value;
+	document.getElementById('search-box').value="";
 	let key = '9cd87d5e9797d00ff537d04ec092b12a';
 	const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}`;
 	checkweather(key, url);
