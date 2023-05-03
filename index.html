@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmvwc1KCrvl69YTm9agfMBt3pPlEzTmNM&libraries=places"></script> -->
+    <title>Weather</title>
+</head>
+
+<body class="flex">
+
+    <h2>weather Forecast</h2>
+
+    <div class="container-box flex">
+
+        <div class="search">
+            <input type="text" name="search-box" id="search-box" placeholder="Enter city name" autofocus required>
+            <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="image">
+        </div>
+        <h3 class="condition"></h3>
+
+        <h1 id="temp"> <sup>0</sup>C</h1>
+
+        <h2 class="city"></h2>
+
+        <div class="card-success flex">
+
+            <div class="logo flex">
+                <i class="fa-solid fa-droplet"></i>
+
+                <div class="values">
+                    <div class="humid-val"> <span>%</span></div>
+                    <div class="info" id="humid">Humidity</div>
+                </div>
+
+            </div>
+
+            <div class="logo flex">
+                <i class="fa-solid fa-wind"></i>
+
+                <div class="values">
+                    <div class="wind-val"> <span>km/h</span></div>
+                    <div class="info" id="wind">Wind</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/6021260e78.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <!-- <script>
+        $(document).ready(function () {
+            let autocomplete;
+            let cityDiv = document.getElementById('search-box');
+            autocomplete = new google.maps.places.Autocomplete(document.getElementById('search-box'), {
+                types: ['geocode'],
+            })
+        })
+    </script> -->
+</body>
+
+</html>

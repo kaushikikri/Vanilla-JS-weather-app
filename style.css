@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  fff, 75b4e3 */
+/*  fff, 6770b0 */
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    padding: 2rem;
+    font-size: large;
+    background: rgb(39, 33, 33) no-repeat;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-box {
+    height: 90%;
+    width: 30%;
+    background: linear-gradient(to bottom, cyan, #6770b0);
+    box-shadow: 20px 20px 50px 15px grey;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.search {
+    width: 100%;
+}
+
+#search-box {
+    width: 80%;
+    height: 2rem;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    padding-inline: 1rem;
+
+}
+
+.btn {
+    color: black;
+    background: white;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50%;
+
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, .8);
+}
+
+.image {
+    width: 30%;
+    height: 30%;
+    background: no-repeat center;
+    background-size: contain;
+}
+
+.card-success {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-block: 2rem;
+
+}
+
+.logo {
+    flex-direction: row;
+    font-size: larger;
+}
+
+@media (max-width:1024px) {
+    .container-box {
+        width: unset;
+    }
+}
